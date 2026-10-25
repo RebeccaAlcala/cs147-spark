@@ -1,0 +1,43 @@
+<!-- @dsCard group="Inputs" height=340 subtitle="Interests, selectable" -->
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:var(--font-sans);color:var(--text);background:var(--surface)}
+.stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.panel{padding:var(--space-5);background:var(--surface);color:var(--text);display:flex;flex-direction:column;gap:var(--space-4)}
+.row{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center}
+.cap{font:600 12px/16px var(--font-sans);letter-spacing:.04em;text-transform:uppercase;color:var(--text-muted);margin:0}
+</style></head><body>
+<div class="stage">
+<div class="panel " data-theme="light">
+<p class="cap">Questionnaire · tap to select</p>
+<div class="row">
+<button class="sp-chip" aria-pressed="true">Ramen</button>
+<button class="sp-chip" aria-pressed="true">Bouldering</button>
+<button class="sp-chip" aria-pressed="false">Board games</button>
+<button class="sp-chip" aria-pressed="false">Film photography</button>
+<button class="sp-chip" aria-pressed="false">Indie music</button>
+<button class="sp-chip" aria-pressed="false">Hiking</button>
+</div>
+<p class="cap">Display only · on a match</p>
+<div class="row">
+<span class="sp-chip sp-chip--static sp-chip--selected">Ramen</span>
+<span class="sp-chip sp-chip--static sp-chip--selected">Bouldering</span>
+</div>
+</div>
+<div class="panel " data-theme="dark">
+<p class="cap">Questionnaire · tap to select</p>
+<div class="row">
+<button class="sp-chip" aria-pressed="true">Ramen</button>
+<button class="sp-chip" aria-pressed="true">Bouldering</button>
+<button class="sp-chip" aria-pressed="false">Board games</button>
+<button class="sp-chip" aria-pressed="false">Film photography</button>
+<button class="sp-chip" aria-pressed="false">Indie music</button>
+<button class="sp-chip" aria-pressed="false">Hiking</button>
+</div>
+<p class="cap">Display only · on a match</p>
+<div class="row">
+<span class="sp-chip sp-chip--static sp-chip--selected">Ramen</span>
+<span class="sp-chip sp-chip--static sp-chip--selected">Bouldering</span>
+</div>
+</div>
+</div></body></html>

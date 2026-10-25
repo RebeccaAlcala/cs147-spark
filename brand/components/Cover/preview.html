@@ -1,0 +1,57 @@
+<!-- @dsCard height=320 subtitle="Spark brand cover" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: var(--surface); }
+  .cover { position: relative; width: 960px; height: 320px; background: var(--surface); overflow: hidden; }
+  svg { position: absolute; inset: 0; display: block; }
+  .b-spark { fill: var(--royal); }
+  .b-mint { fill: var(--mint); stroke: var(--line); stroke-width: 1; }
+  .b-sky { fill: var(--sky); }
+  .b-yellow { fill: var(--spark); }
+  .b-ink { fill: var(--text); }
+  .dot { fill: var(--surface); }
+  .r-xl { rx: var(--radius-xl); ry: var(--radius-xl); }
+  .text { position: absolute; left: 40px; bottom: 36px; max-width: 440px; }
+  .name { margin: 0; font: 600 120px/0.95 var(--font-display); color: var(--primary); letter-spacing: -0.035em; }
+  .tag { margin: 8px 0 0; font: 400 14px/20px var(--font-sans); color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<svg viewBox="0 0 960 320" width="960" height="320" aria-hidden="true">
+<!--
+  blocks: royal 240x272 slab, mint 224x128 (bleeds right), sky 104x136 pill, yellow r52 disc, ink r16 disc; gaps are space-2 (8px)
+  arrangement: tall royal slab left of a staggered right column that bleeds off the right edge, everything right of x=480
+  pattern: a 6x8 grid of ground-colored dots at a 32px pitch (space-6) cut out of the royal slab; soft, friendly, large radii point to discs and pills, and two discs read as two strangers meeting
+  scales: radius-xl corners on the slab and mint block, radius-pill (half the short side) on the sky pill and discs, space-2 gaps, space-6 dot pitch
+-->
+<rect class="b-spark r-xl" x="488" y="24" width="240" height="272"/>
+<g>
+  <circle class="dot" cx="528" cy="48" r="5"/><circle class="dot" cx="560" cy="48" r="5"/><circle class="dot" cx="592" cy="48" r="5"/><circle class="dot" cx="624" cy="48" r="5"/><circle class="dot" cx="656" cy="48" r="5"/><circle class="dot" cx="688" cy="48" r="5"/>
+  <circle class="dot" cx="528" cy="80" r="5"/><circle class="dot" cx="560" cy="80" r="5"/><circle class="dot" cx="592" cy="80" r="5"/><circle class="dot" cx="624" cy="80" r="5"/><circle class="dot" cx="656" cy="80" r="5"/><circle class="dot" cx="688" cy="80" r="5"/>
+  <circle class="dot" cx="528" cy="112" r="5"/><circle class="dot" cx="560" cy="112" r="5"/><circle class="dot" cx="592" cy="112" r="5"/><circle class="dot" cx="624" cy="112" r="5"/><circle class="dot" cx="656" cy="112" r="5"/><circle class="dot" cx="688" cy="112" r="5"/>
+  <circle class="dot" cx="528" cy="144" r="5"/><circle class="dot" cx="560" cy="144" r="5"/><circle class="dot" cx="592" cy="144" r="5"/><circle class="dot" cx="624" cy="144" r="5"/><circle class="dot" cx="656" cy="144" r="5"/><circle class="dot" cx="688" cy="144" r="5"/>
+  <circle class="dot" cx="528" cy="176" r="5"/><circle class="dot" cx="560" cy="176" r="5"/><circle class="dot" cx="592" cy="176" r="5"/><circle class="dot" cx="624" cy="176" r="5"/><circle class="dot" cx="656" cy="176" r="5"/><circle class="dot" cx="688" cy="176" r="5"/>
+  <circle class="dot" cx="528" cy="208" r="5"/><circle class="dot" cx="560" cy="208" r="5"/><circle class="dot" cx="592" cy="208" r="5"/><circle class="dot" cx="624" cy="208" r="5"/><circle class="dot" cx="656" cy="208" r="5"/><circle class="dot" cx="688" cy="208" r="5"/>
+  <circle class="dot" cx="528" cy="240" r="5"/><circle class="dot" cx="560" cy="240" r="5"/><circle class="dot" cx="592" cy="240" r="5"/><circle class="dot" cx="624" cy="240" r="5"/><circle class="dot" cx="656" cy="240" r="5"/><circle class="dot" cx="688" cy="240" r="5"/>
+  <circle class="dot" cx="528" cy="272" r="5"/><circle class="dot" cx="560" cy="272" r="5"/><circle class="dot" cx="592" cy="272" r="5"/><circle class="dot" cx="624" cy="272" r="5"/><circle class="dot" cx="656" cy="272" r="5"/><circle class="dot" cx="688" cy="272" r="5"/>
+</g>
+<rect class="b-mint r-xl" x="736" y="24" width="248" height="128"/>
+<rect class="b-sky" x="736" y="160" width="104" height="136" rx="52" ry="52"/>
+<circle class="b-yellow" cx="904" cy="212" r="52"/>
+<circle class="b-ink" cx="904" cy="280" r="16"/>
+</svg>
+<div class="text">
+  <h2 class="name">spark</h2>
+  <p class="tag">Meet someone new, right where you are.</p>
+</div>
+</div>
+</body>
+</html>

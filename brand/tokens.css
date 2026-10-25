@@ -1,0 +1,59 @@
+/* Generated from tokens.json (Spark brand kit v3). Do not hand-edit; change tokens.json and regenerate. */
+:root {
+  --royal: #2A4FD6;
+  --spark: #FFD62E;
+  --sky: #7CC4F8;
+  --mint: #C9F5A8;
+  --ink: #141414;
+  --white: #FFFFFF;
+  --on-color: var(--ink);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+  --radius-icon: 22.5%;
+  --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+:root,
+[data-theme="light"] {
+  --surface: var(--white);
+  --surface-raised: var(--white);
+  --surface-sunken: rgba(20, 20, 20, 0.05);
+  --text: var(--ink);
+  --text-muted: rgba(20, 20, 20, 0.68);
+  --line: rgba(20, 20, 20, 0.12);
+  --line-strong: rgba(20, 20, 20, 0.58);
+  --primary: var(--royal);
+  --on-primary: var(--white);
+  --link: var(--royal);
+  --focus: var(--royal);
+  --shadow-soft: 0 6px 18px rgba(20, 20, 20, 0.10);
+  --shadow-lift: 0 12px 30px rgba(20, 20, 20, 0.16);
+}
+[data-theme="dark"] {
+  --surface: var(--ink);
+  --surface-raised: rgba(255, 255, 255, 0.08);
+  --surface-sunken: rgba(0, 0, 0, 0.25);
+  --text: var(--white);
+  --text-muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.14);
+  --line-strong: rgba(255, 255, 255, 0.6);
+  --primary: var(--sky);
+  --on-primary: var(--ink);
+  --link: var(--sky);
+  --focus: var(--white);
+  --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.40);
+  --shadow-lift: 0 12px 30px rgba(0, 0, 0, 0.50);
+}
+
+body { background: var(--surface); color: var(--text); font-family: var(--font-sans); }

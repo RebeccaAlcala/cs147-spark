@@ -1,0 +1,143 @@
+/* Spark component styles. Every value comes from tokens.css custom properties. */
+
+.sp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 48px;
+  padding: var(--space-3) var(--space-5);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--primary);
+  color: var(--on-primary);
+  font: 600 16px/24px var(--font-sans);
+  cursor: pointer;
+  transition: transform 160ms cubic-bezier(0.34, 1.56, 0.64, 1), background 160ms ease;
+}
+.sp-btn:hover { transform: translateY(-1px); }
+.sp-btn:active { background-image: linear-gradient(rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.14)); transform: scale(0.97, 0.95); }
+.sp-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.sp-btn--accept { background: var(--spark); color: var(--on-color); }
+.sp-btn--secondary {
+  background: transparent;
+  color: var(--text);
+  box-shadow: inset 0 0 0 2px var(--line-strong);
+}
+.sp-btn--secondary:active { background: var(--surface-sunken); color: var(--text); }
+.sp-btn--small { min-height: 40px; padding: var(--space-2) var(--space-4); font-size: 14px; line-height: 20px; }
+.sp-btn[disabled] {
+  background: var(--surface-sunken);
+  color: var(--text-muted);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.sp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 6px var(--space-3);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--surface-raised);
+  box-shadow: inset 0 0 0 1.5px var(--line-strong);
+  color: var(--text);
+  font: 600 14px/20px var(--font-sans);
+  cursor: pointer;
+}
+.sp-chip[aria-pressed="true"],
+.sp-chip--selected {
+  background: var(--primary);
+  box-shadow: none;
+  color: var(--on-primary);
+}
+.sp-chip--static { cursor: default; }
+.sp-chip:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.sp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-pill);
+  font: 600 12px/16px var(--font-sans);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.sp-badge--here { background: var(--sky); color: var(--on-color); }
+.sp-badge--match { background: var(--spark); color: var(--on-color); }
+.sp-badge--mint { background: var(--mint); color: var(--on-color); box-shadow: inset 0 0 0 1px rgba(20, 20, 20, 0.18); }
+
+.sp-card {
+  background: var(--surface-raised);
+  color: var(--text);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft), inset 0 0 0 1px var(--line);
+  padding: var(--space-4);
+  font-family: var(--font-sans);
+}
+.sp-card--hero {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lift), inset 0 0 0 1px var(--line);
+  padding: var(--space-5);
+}
+.sp-card__title { margin: 0; font: 600 22px/28px var(--font-display); letter-spacing: -0.015em; }
+.sp-card__meta { margin: var(--space-1) 0 0; color: var(--text-muted); font: 400 13px/18px var(--font-sans); }
+.sp-card__row { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-3); }
+.sp-card__actions { display: flex; gap: var(--space-3); margin-top: var(--space-4); }
+.sp-card__actions > .sp-btn { flex: 1; }
+.sp-card__note { margin: var(--space-3) 0 0; color: var(--text-muted); font: 400 13px/18px var(--font-sans); }
+
+.sp-pin {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--sky);
+  display: grid;
+  place-items: center;
+}
+.sp-pin svg { width: 22px; height: 22px; }
+
+.sp-avatar {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+  display: grid;
+  place-items: center;
+}
+.sp-avatar svg { width: 36px; height: 36px; }
+
+.sp-head { display: flex; align-items: center; gap: var(--space-3); }
+
+/* Checked-in card: soft mint wash. Text is always ink on mint, in both themes. */
+.sp-card--here {
+  background: var(--mint);
+  color: var(--ink);
+}
+.sp-card--here .sp-card__meta,
+.sp-card--here .sp-card__note { color: rgba(20, 20, 20, 0.68); }
+
+/* The sparkle gradient: sky to mint at 135 degrees. For washes, the logo sparkle and hero moments. */
+.sp-gradient { background: linear-gradient(135deg, var(--sky), var(--mint)); color: var(--on-color); }
+
+/* Soft wash for splash and match screens: a breath of sky top left, mint bottom right. */
+.sp-wash {
+  background:
+    radial-gradient(55% 45% at 12% 14%, rgba(124, 196, 248, 0.38), rgba(124, 196, 248, 0) 70%),
+    radial-gradient(60% 50% at 88% 86%, rgba(201, 245, 168, 0.85), rgba(201, 245, 168, 0) 70%),
+    var(--surface);
+}
+[data-theme="dark"] .sp-wash {
+  background:
+    radial-gradient(55% 45% at 12% 14%, rgba(124, 196, 248, 0.10), rgba(124, 196, 248, 0) 70%),
+    radial-gradient(60% 50% at 88% 86%, rgba(201, 245, 168, 0.06), rgba(201, 245, 168, 0) 70%),
+    var(--surface);
+}
+
+.sp-link { color: var(--link); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }

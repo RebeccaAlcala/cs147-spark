@@ -1,0 +1,129 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-14T03:52:22Z"
+  },
+  "title": "Spark",
+  "namespace": "Spark",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logo",
+    "Mascot"
+  ],
+  "assetGroups": {
+    "Logo": {
+      "name": "Logo",
+      "tile": "l",
+      "order": [
+        "spark-logo.svg",
+        "spark-logo-animated.svg",
+        "spark-logo-transparent.svg",
+        "spark-logo-on-dark.svg",
+        "spark-logo-mono-royal.svg",
+        "spark-logo-mono-ink.svg",
+        "spark-mark.svg",
+        "spark-mark-mono-ink.svg",
+        "spark-app-icon-royal.svg",
+        "spark-app-icon-ink.svg"
+      ],
+      "files": {
+        "spark-logo.svg": {
+          "name": "spark-logo.svg",
+          "blob": "0c735fe86af0f173cca0509a2a913a4d",
+          "size": 2783,
+          "type": "image/svg+xml"
+        },
+        "spark-logo-animated.svg": {
+          "name": "spark-logo-animated.svg",
+          "blob": "b8e35da6bb5bec5128fc2085df3b27f2",
+          "size": 3093,
+          "type": "image/svg+xml"
+        },
+        "spark-logo-transparent.svg": {
+          "name": "spark-logo-transparent.svg",
+          "blob": "8235ebffb347109db698b6e702a9bed6",
+          "size": 2736,
+          "type": "image/svg+xml"
+        },
+        "spark-logo-on-dark.svg": {
+          "name": "spark-logo-on-dark.svg",
+          "blob": "c9ae4dbc90286b73702b1d79710eca6f",
+          "size": 2783,
+          "type": "image/svg+xml"
+        },
+        "spark-logo-mono-royal.svg": {
+          "name": "spark-logo-mono-royal.svg",
+          "blob": "959176f493001b8913007e5135266525",
+          "size": 2622,
+          "type": "image/svg+xml"
+        },
+        "spark-logo-mono-ink.svg": {
+          "name": "spark-logo-mono-ink.svg",
+          "blob": "ce6860b1751d92427d55b2fb1ee08d65",
+          "size": 2622,
+          "type": "image/svg+xml"
+        },
+        "spark-mark.svg": {
+          "name": "spark-mark.svg",
+          "blob": "460a35bb693b142d6d1e46bf35558f0b",
+          "size": 470,
+          "type": "image/svg+xml"
+        },
+        "spark-mark-mono-ink.svg": {
+          "name": "spark-mark-mono-ink.svg",
+          "blob": "efaa7d9e2f40f1a63a7cf4f4719a5552",
+          "size": 309,
+          "type": "image/svg+xml"
+        },
+        "spark-app-icon-royal.svg": {
+          "name": "spark-app-icon-royal.svg",
+          "blob": "700e45c2bdcc5eb6400cf24f6a5191c3",
+          "size": 583,
+          "type": "image/svg+xml"
+        },
+        "spark-app-icon-ink.svg": {
+          "name": "spark-app-icon-ink.svg",
+          "blob": "95ebefe04ff724c7703fb97a9b9fbc70",
+          "size": 583,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Mascot": {
+      "name": "Mascot",
+      "tile": "l",
+      "order": [
+        "spark-mascot-poses-flat.png",
+        "spark-mascot-poses-glossy.png"
+      ],
+      "files": {
+        "spark-mascot-poses-flat.png": {
+          "name": "spark-mascot-poses-flat.png",
+          "blob": "e8df7384f15907f2125dffd24125d1d7",
+          "size": 743313,
+          "type": "image/png"
+        },
+        "spark-mascot-poses-glossy.png": {
+          "name": "spark-mascot-poses-glossy.png",
+          "blob": "0c7399257a563bfef353a0ea81900496",
+          "size": 722520,
+          "type": "image/png"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-10-14T05:00:00Z",
+    "via": "Claude chat",
+    "note": "Royal blue wordmark with sky-to-mint sparkle, Inter type, new six-color palette"
+  }
+}

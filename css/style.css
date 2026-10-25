@@ -1,0 +1,146 @@
+/* Spark team site. Tokens come from the Spark brand kit (six colors only). */
+:root {
+  --sunken: var(--surface-sunken);
+  --gradient: linear-gradient(135deg, var(--sky), var(--mint));
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text);
+  background: var(--surface);
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { max-width: 100%; display: block; }
+a { color: var(--link); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+h1, h2, h3 { font-weight: 600; margin: 0; }
+h1 { font-size: clamp(40px, 7vw, 56px); line-height: 1.07; letter-spacing: -0.03em; }
+h2 { font-size: 28px; line-height: 34px; letter-spacing: -0.02em; }
+h3 { font-size: 22px; line-height: 28px; letter-spacing: -0.015em; }
+p { margin: 0; }
+
+.wrap { width: min(1080px, 100% - 32px); margin-inline: auto; }
+.label {
+  font-size: 12px; line-height: 16px; font-weight: 600;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted);
+}
+.lead { font-size: 18px; line-height: 28px; color: var(--text-muted); max-width: 56ch; }
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav img { height: 40px; width: auto; }
+.nav ul { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.nav li a {
+  display: inline-block; padding: 8px 14px; border-radius: var(--radius-pill);
+  color: var(--ink); text-decoration: none; font-weight: 500; font-size: 15px;
+}
+.nav li a:hover { background: var(--sunken); }
+
+/* Hero */
+.hero { background: var(--gradient); opacity: 1; position: relative; overflow: hidden; }
+.hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.78));
+}
+.hero .wrap { position: relative; z-index: 1; padding: 96px 0 80px; display: grid; gap: 24px; }
+.hero h1 { max-width: 14ch; }
+.hero .lead { color: rgba(20, 20, 20, 0.78); }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.sparkle {
+  position: absolute; z-index: 1; right: 6%; top: 52px; width: 180px; height: 180px;
+  animation: twinkle 5s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 82%, 100% { transform: rotate(14deg) scale(1); }
+  90% { transform: rotate(26deg) scale(1.1); }
+}
+@media (max-width: 720px) { .sparkle { width: 96px; height: 96px; right: 16px; top: 24px; } }
+
+/* Sections */
+section { padding: 72px 0; }
+.section-head { display: grid; gap: 12px; margin-bottom: 40px; }
+
+/* How it works */
+.steps { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card {
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-soft);
+  display: grid; gap: 12px; align-content: start;
+}
+.step-num {
+  width: 40px; height: 40px; border-radius: var(--radius-pill);
+  display: grid; place-items: center; font-weight: 600;
+  background: var(--mint); color: var(--ink); border: 1px solid var(--line);
+}
+.card:nth-child(2) .step-num { background: var(--sky); border: 0; }
+.card:nth-child(3) .step-num { background: var(--spark); border: 0; }
+
+.band { background: var(--sunken); }
+.pull { font-size: 28px; line-height: 36px; font-weight: 600; letter-spacing: -0.02em; max-width: 28ch; }
+
+/* Milestones */
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
+.milestone { display: grid; gap: 16px; grid-template-columns: 56px 1fr; }
+.milestone .dot {
+  width: 40px; height: 40px; border-radius: var(--radius-pill);
+  background: var(--white); border: 2px solid var(--line-strong);
+  display: grid; place-items: center; font-weight: 600; font-size: 12px;
+}
+.milestone.done .dot { background: var(--mint); border-color: var(--ink); }
+.milestone.now .dot { background: var(--spark); border-color: var(--ink); }
+.milestone .card { gap: 10px; }
+.milestone-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; justify-content: space-between; }
+.badge {
+  font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.04em;
+  text-transform: uppercase; padding: 4px 10px; border-radius: var(--radius-pill);
+  background: var(--sunken); color: var(--ink);
+}
+.badge.done { background: var(--mint); }
+.badge.now { background: var(--spark); }
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.chip {
+  display: inline-block; padding: 6px 14px; border-radius: var(--radius-pill);
+  font-size: 14px; font-weight: 600; text-decoration: none; color: var(--royal);
+  box-shadow: inset 0 0 0 1.5px var(--royal);
+}
+.chip:hover { background: var(--royal); color: var(--white); }
+.chip.soon { color: var(--text-muted); box-shadow: inset 0 0 0 1.5px var(--line); pointer-events: none; }
+
+/* Team */
+.team { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.person { text-align: left; }
+.avatar {
+  width: 72px; height: 72px; border-radius: var(--radius-pill);
+  background: var(--gradient); display: grid; place-items: center;
+  font-size: 24px; font-weight: 600; border: 1px solid var(--line);
+}
+.avatar img { width: 100%; height: 100%; border-radius: inherit; object-fit: cover; }
+.role { color: var(--text-muted); font-size: 15px; }
+
+/* Footer */
+footer { border-top: 1px solid var(--line); padding: 40px 0; color: var(--text-muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; }
+footer img { height: 32px; width: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .sparkle { animation: none; transform: rotate(14deg); }
+  .btn { transition: none; }
+}
+@media (max-width: 720px) {
+  .nav ul { display: none; }
+  .milestone { grid-template-columns: 40px 1fr; gap: 12px; }
+  section { padding: 56px 0; }
+}
