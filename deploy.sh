@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
 
 rsync -avz --delete \
   --exclude '.git' --exclude '.github' --exclude '.gitignore' \
-  --exclude 'README.md' --exclude 'deploy.sh' --exclude '.DS_Store' \
+  --exclude 'README.md' --exclude 'AGENTS.md' --exclude 'CLAUDE.md' --exclude 'scripts' --exclude 'deploy.sh' --exclude '.DS_Store' \
   ./ "${SUNET}@myth.stanford.edu:${REMOTE_DIR}"
 
 echo "Done. Check https://web.stanford.edu/class/cs147/projects/DesigningforSerendipity/spark/"
