@@ -1,3 +1,11 @@
+/* Inter, hosted on this site (course rule: all content on the Stanford server). */
+@font-face { font-family: "Inter"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("../assets/fonts/Inter/static/Inter_24pt-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 500; font-style: normal; font-display: swap;
+  src: url("../assets/fonts/Inter/static/Inter_24pt-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-style: normal; font-display: swap;
+  src: url("../assets/fonts/Inter/static/Inter_24pt-SemiBold.ttf") format("truetype"); }
+
 /* Spark team site. Tokens come from the Spark brand kit (six colors only). */
 :root {
   --sunken: var(--surface-sunken);
