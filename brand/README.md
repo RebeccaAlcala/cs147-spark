@@ -12,7 +12,7 @@ Sources:
 | --- | --- |
 | `README-guidelines.md` | The full brand guidelines: six colors, content voice, type, shape, space, imagery, motion, iconography |
 | `logo.md` | Which logo file to use, clear space, minimum sizes, misuse |
-| `logo/` | Ten logo SVGs: default, transparent, animated, on dark, mono royal, mono ink, mark, mark mono, app icon royal, app icon ink |
+| `logo/` | Twelve logo SVGs: default, transparent, animated (two), on dark, mono royal, mono ink, mark, mark plain (no face), mark mono, app icon royal, app icon ink |
 | `tokens.json` | Source of truth for colors, type, spacing, radius, shadow (light and dark themes) |
 | `tokens.css` | CSS custom properties generated from `tokens.json`; the site links this file |
 | `components/bundle.css` | Spark component styles (`sp-btn`, `sp-chip`, `sp-badge`, `sp-card`, `sp-pin`, `sp-avatar`, `sp-gradient`, `sp-wash`) |
@@ -31,7 +31,7 @@ Sources:
 
 ## Notes from the import
 
-- The kit's `spark-logo-animated.svg` came through with the sparkle marked for animation but without the animation itself. It was repaired in this copy (one gentle twinkle every 5 seconds, off for reduced motion). If the original is fixed, replace this file.
+- The logo now includes a happy face on the sparkle (updated 2026-10-26). `spark-mark-plain.svg` is the faceless version for the favicon and tiny sizes. The animated logos twinkle the sparkle and its face once every few seconds and stop for reduced motion.
 - The logo-directions canvas boards only display correctly inside Claude (their images live in that artifact), so they are not copied here. Open the link above to view them.
 - Component previews expect the token variables, so they look right only when `tokens.css` and `components/bundle.css` are loaded.
 - Fonts: the kit loads Inter from Google Fonts. For the final submission, host Inter locally (see `docs/PLAN.md`).
