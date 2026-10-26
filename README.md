@@ -15,7 +15,8 @@ It is plain HTML, CSS and images. There is **no build step**, so anyone can edit
 
 ```
 index.html        the whole site (sections: about, how it works, milestones, team)
-css/style.css     page layout, built on the brand tokens
+css/style.css     page layout and motion, built on the brand tokens
+js/main.js        scroll-reveal and nav shadow (optional; page works without it)
 brand/            the full Spark brand kit (logos, tokens, components, guidelines)
 assets/           site images (screenshots, photos)
 docs/             PLAN.md (the site plan), plus PDFs, slides and posters as you add them

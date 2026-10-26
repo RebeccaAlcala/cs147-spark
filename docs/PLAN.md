@@ -60,7 +60,8 @@ Everything follows the Spark brand kit in `brand/`. Short version:
 - **Type:** Inter 400, 500, 600. Headlines 600 with tight tracking. Never 700 or heavier.
 - **Shape:** pills for anything clickable, 24px cards with a soft shadow and hairline, no sharp corners.
 - **Logo:** `brand/logo/spark-logo-transparent.svg` on white; follow `brand/logo.md` (clear space, 80px minimum, no recoloring).
-- **Motion:** one gentle sparkle twinkle every few seconds, nothing urgent. Turn it off for people who prefer reduced motion.
+- **Motion:** gentle and bouncy (ease-out, small overshoot, 200 to 350ms), nothing urgent. The logo only twinkles. Page motion: hero entrance, small sparkles that pop and fade, sections that rise in on scroll (`js/main.js`), card hover lift. All of it turns off for people who prefer reduced motion, and the page is fully readable without JavaScript.
+- **Logo placement:** nav, a large card in the hero, a full-width band mid-page, and the footer. Always on white or the soft wash, never over a busy image.
 - **Imagery:** real photos of third spaces and real app screenshots. No stock people. The archived star mascot is not used.
 - **Icons:** rounded line icons, 2px stroke (Lucide is the stand-in).
 
