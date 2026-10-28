@@ -26,7 +26,22 @@
 
   // Nav picks up a soft shadow once you scroll.
   var nav = document.querySelector(".nav");
-  function onScroll() { if (nav) nav.classList.toggle("scrolled", window.scrollY > 8); }
+  // The nav link for the section you are in is picked out, like the app's tab bar.
+  var links = Array.prototype.slice.call(document.querySelectorAll(".nav li a"));
+  var spied = links.map(function (a) { return document.querySelector(a.getAttribute("href")); });
+  function spy() {
+    var cur = -1;
+    spied.forEach(function (s, i) {
+      if (s && s.getBoundingClientRect().top <= 120) cur = i;
+    });
+    links.forEach(function (a, i) {
+      if (i === cur) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    });
+  }
+  function onScroll() {
+    if (nav) nav.classList.toggle("scrolled", window.scrollY > 8);
+    spy();
+  }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 })();
