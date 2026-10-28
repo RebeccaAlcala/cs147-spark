@@ -1,6 +1,6 @@
 # Logo
 
-The Spark logo is the word "spark" in tightly spaced Inter Display SemiBold, with a four-point sparkle in place of the "a". The letters are royal blue; the sparkle is filled with the sky-to-mint gradient and tilted 14 degrees to the right. It is designed to sit on white. Files live in `assets/Logo/`.
+The Spark logo is the word "spark" in tightly spaced Inter Display SemiBold, with a four-point sparkle in place of the "a". The letters are royal blue; the sparkle is filled with the sky-to-mint gradient, tilted 14 degrees to the right, and wears a small happy face (closed smiling eyes and an open smile) so it reads as a friendly character. It is designed to sit on white. Files live in `assets/Logo/`.
 
 ## Which file to use
 
@@ -11,7 +11,8 @@ The Spark logo is the word "spark" in tightly spaced Inter Display SemiBold, wit
 | Animated: the sparkle twinkles every few seconds; for splash, loading and the concept video | `spark-logo-animated.svg` |
 | On `ink` or dark photography | `spark-logo-on-dark.svg` (white letters on an ink backing; delete the first `<rect>` for transparent) |
 | One-color print, stamps, embossing, single-ink jobs | `spark-logo-mono-royal.svg` or `spark-logo-mono-ink.svg` |
-| Avatar, sticker, favicon, anywhere the word will not fit | `spark-mark.svg` (or `spark-mark-mono-ink.svg`) |
+| Avatar, sticker, anywhere the word will not fit | `spark-mark.svg` (the sparkle with its face) |
+| Favicon and anything under 32px, where the face would blur | `spark-mark-plain.svg` (the sparkle without a face) |
 | App icon | `spark-app-icon-royal.svg` (primary) or `spark-app-icon-ink.svg` |
 
 ## Rules

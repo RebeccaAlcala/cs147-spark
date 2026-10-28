@@ -282,3 +282,20 @@ footer img { height: 64px; width: auto; }
 @media (prefers-reduced-motion: reduce) {
   .sp-btn, .sp-btn:hover, .sp-btn:active { transition: none; transform: none; }
 }
+
+/* ---------- The sparkle with a face, used as a friendly accent (decorative) ---------- */
+.friend { display: block; width: 72px; height: 72px; pointer-events: none; }
+.hero-logo-card { position: relative; }
+.hero-logo-card .hero-friend { position: absolute; top: -30px; right: -14px; width: 72px; height: 72px; rotate: 12deg; animation: bob 4.5s ease-in-out infinite; }
+#about .wrap { position: relative; }
+.about-friend { position: absolute; top: 0; right: 0; width: 112px; height: 112px; rotate: -10deg; }
+.logo-band .wrap { position: relative; }
+.logo-band .band-friend { position: absolute; top: 50%; width: 64px; height: 64px; margin-top: -32px; }
+.logo-band .band-friend.l { left: 8%; rotate: -14deg; }
+.logo-band .band-friend.r { right: 8%; width: 48px; height: 48px; margin-top: 0; rotate: 18deg; }
+@keyframes bob { 50% { translate: 0 -6px; } }
+@media (max-width: 820px) {
+  .hero-logo-card .hero-friend { width: 56px; height: 56px; top: -24px; right: -6px; }
+  .about-friend, .logo-band .band-friend { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .hero-friend { animation: none; } }
