@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spark</title>
-  <meta name="description" content="Spark helps strangers who are already in the same place find each other.">
-  <link rel="icon" href="brand/logo/spark-mark.svg" type="image/svg+xml">
+  <meta name="description" content="Spark helps people in third spaces find others of similar interests.">
+  <link rel="icon" href="brand/logo/spark-mark-plain.svg" type="image/svg+xml">
   <link rel="stylesheet" href="brand/tokens.css">
   <link rel="stylesheet" href="brand/components/bundle.css">
   <link rel="stylesheet" href="css/style.css">
@@ -47,11 +47,12 @@
         <p class="lead">Spark helps strangers who are already in the same place find each other, at the cafes, climbing gyms, game stores and parks near you.</p>
         <div class="actions">
           <a class="sp-btn" href="#milestones">See deliverables</a>
-          <a class="sp-btn sp-btn--secondary" href="#how">How it works</a>
+          <a class="sp-btn sp-btn--tertiary" href="#how">How it works</a>
         </div>
       </div>
       <div class="hero-logo-card">
         <img src="brand/logo/spark-logo-animated-transparent.svg" alt="Spark">
+        <img class="friend hero-friend" src="brand/logo/spark-mark.svg" alt="" aria-hidden="true">
       </div>
     </div>
   </div>
@@ -59,11 +60,12 @@
   <!-- About -->
   <section id="about">
     <div class="wrap">
+      <img class="friend about-friend" src="brand/logo/spark-mark.svg" alt="" aria-hidden="true">
       <div class="section-head">
         <p class="label">About</p>
         <h2>A friendly nudge, never pressure to perform</h2>
         <p class="lead">Plenty of us spend time in the same cafes, climbing gyms and game stores as people we would probably get along with, but nobody knows how to say hello.</p>
-        <p class="lead">Spark points you to nearby third spaces and lets you check in when you arrive. If someone checked in at the same spot shares your interests, you are both introduced. You each see only interests and an age range. There is no messaging: if you both say hi, you meet right where you are, right away.</p>
+        <p class="lead">Spark points you to nearby third spaces and lets you check in when you arrive. If someone checked in at the same spot shares your interests, you are both introduced.</p>
       </div>
     </div>
   </section>
@@ -80,16 +82,50 @@
           <div class="step-num">1</div>
           <h3>Pick your interests</h3>
           <p>Answer a short questionnaire. We only share interests and an age range.</p>
+          <!-- picture of the app's interest tiles (decorative) -->
+          <div class="demo" aria-hidden="true">
+            <div class="tiles">
+              <div class="tile on"><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M7 21h10"/></svg></span>Ramen</div>
+              <div class="tile"><span class="ico"><svg viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg></span>Hiking</div>
+              <div class="tile on"><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><span class="ico"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="3"/><path d="M8 8h.01M16 8h.01M8 16h.01M16 16h.01M12 12h.01"/></svg></span>Board games</div>
+            </div>
+          </div>
         </div>
         <div class="card">
           <div class="step-num">2</div>
           <h3>Check in nearby</h3>
           <p>Spark points you to third spaces close by. Tap "I'm here" when you arrive.</p>
+          <!-- picture of the app's place card (decorative) -->
+          <div class="demo" aria-hidden="true">
+            <div class="mini">
+              <div class="mini-top"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div class="mini-body">
+                <div class="mini-row">
+                  <div><div class="mini-title">Mochi Corner Cafe</div><div class="mini-meta">0.2 mi away</div></div>
+                  <svg viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></svg>
+                </div>
+                <span class="sp-btn sp-btn--small">I'm here</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="card">
           <div class="step-num">3</div>
           <h3>Meet someone friendly</h3>
           <p>If someone at the same spot shares your interests and you both say hi, you meet right there. No messaging, just hello.</p>
+          <!-- picture of the app's match card (decorative) -->
+          <div class="demo" aria-hidden="true">
+            <div class="mini match">
+              <div class="mini-body">
+                <span class="sp-badge sp-badge--match" style="justify-self:start">Match</span>
+                <p>Someone at Mochi Corner shares your love of ramen and bouldering.</p>
+                <div class="mini-actions">
+                  <span class="sp-btn sp-btn--small sp-btn--accept">Say hi</span>
+                  <span class="sp-btn sp-btn--small sp-btn--tertiary">Not now</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- TODO: add screenshots or prototype links here (put files in assets/img/) -->
@@ -102,7 +138,7 @@
       <div class="section-head">
         <p class="label">Milestones</p>
         <h2>How Spark came together</h2>
-        <p class="lead">Every phase of the project, with the reports, slides and prototypes from each one.</p>
+        <p class="lead"></p>
       </div>
 
       <!-- To add a milestone: copy one <li> block, change the class (done / now / blank),
@@ -115,9 +151,7 @@
           <div class="dot">A1</div>
           <div class="card">
             <div class="milestone-top"><h3>Needfinding</h3><span class="badge done">Done</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
-            <div class="links"><a class="chip soon" href="#milestones">Slides</a></div>
+            <div class="links"><a class="chip" href="docs/assignment-1-slides.pdf">Slides</a></div>
           </div>
         </li>
 
@@ -125,38 +159,30 @@
           <div class="dot">A2</div>
           <div class="card">
             <div class="milestone-top"><h3>POVs, HMWs, brainstorming and experience prototypes</h3><span class="badge done">Done</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
-            <div class="links"><a class="chip soon" href="#milestones">Slides</a></div>
+            <div class="links"><a class="chip" href="docs/assignment-2-slides.pdf">Slides</a></div>
+          </div>
+        </li>
+
+        <li class="milestone done">
+          <div class="dot">A4</div>
+          <div class="card">
+            <div class="milestone-top"><h3>Concept video</h3><span class="badge done">Done</span></div>
+            <div class="links"><a class="chip" href="https://www.youtube.com/watch?v=qs0WNObXb7Q">Watch on YouTube</a><a class="chip" href="docs/storyboard.pdf">Storyboard</a><a class="chip" href="docs/assignment-4-slides.pdf">Slides</a></div>
+          </div>
+        </li>
+
+        <li class="milestone done">
+          <div class="dot">A5</div>
+          <div class="card">
+            <div class="milestone-top"><h3>Sketching, low-fi prototype and usability testing</h3><span class="badge done">Done</span></div>
+            <div class="links"><a class="chip" href="docs/assignment-5-slides.pdf">Slides</a></div>
           </div>
         </li>
 
         <li class="milestone now">
-          <div class="dot">A4</div>
-          <div class="card">
-            <div class="milestone-top"><h3>Concept video</h3><span class="badge now">In progress</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
-            <div class="links"><a class="chip soon" href="#milestones">Watch on YouTube</a><a class="chip soon" href="#milestones">Download video</a><a class="chip soon" href="#milestones">Storyboard</a><a class="chip soon" href="#milestones">Slides</a></div>
-          </div>
-        </li>
-
-        <li class="milestone ">
-          <div class="dot">A5</div>
-          <div class="card">
-            <div class="milestone-top"><h3>Sketching, low-fi prototype and usability testing</h3><span class="badge ">Coming up</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
-            <div class="links"><a class="chip soon" href="#milestones">Slides</a></div>
-          </div>
-        </li>
-
-        <li class="milestone ">
           <div class="dot">A6</div>
           <div class="card">
-            <div class="milestone-top"><h3>Interactive medium-fi prototype</h3><span class="badge ">Coming up</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
+            <div class="milestone-top"><h3>Interactive medium-fi prototype</h3><span class="badge now">In progress</span></div>
             <div class="links"><a class="chip soon" href="#milestones">Figma prototype</a><a class="chip soon" href="#milestones">Slides</a><a class="chip soon" href="#milestones">Readme</a></div>
           </div>
         </li>
@@ -165,8 +191,6 @@
           <div class="dot">A8</div>
           <div class="card">
             <div class="milestone-top"><h3>High-fi prototype</h3><span class="badge ">Coming up</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
             <div class="links"><a class="chip soon" href="#milestones">Slides</a><a class="chip soon" href="#milestones">Code on GitHub</a><a class="chip soon" href="#milestones">Readme</a></div>
           </div>
         </li>
@@ -175,8 +199,6 @@
           <div class="dot">A9</div>
           <div class="card">
             <div class="milestone-top"><h3>Heuristic evaluation</h3><span class="badge ">Coming up</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
             <div class="links"><a class="chip soon" href="#milestones">Feedback (PDF)</a></div>
           </div>
         </li>
@@ -185,8 +207,6 @@
           <div class="dot">A10</div>
           <div class="card">
             <div class="milestone-top"><h3>Poster, pitch and demo video</h3><span class="badge ">Coming up</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
             <div class="links"><a class="chip soon" href="#milestones">Poster</a><a class="chip soon" href="#milestones">Pitch slide</a><a class="chip soon" href="#milestones">Demo video</a></div>
           </div>
         </li>
@@ -195,8 +215,6 @@
           <div class="dot">A11</div>
           <div class="card">
             <div class="milestone-top"><h3>Final report</h3><span class="badge ">Coming up</span></div>
-            <p class="label">TODO date</p>
-            <p>TODO: one or two sentences on what you did and learned.</p>
             <div class="links"><a class="chip soon" href="#milestones">Report (PDF)</a></div>
           </div>
         </li>
@@ -208,8 +226,10 @@
   <!-- Logo band -->
   <section class="logo-band sp-wash" aria-label="Spark">
     <div class="wrap">
+      <img class="friend band-friend l" src="brand/logo/spark-mark.svg" alt="" aria-hidden="true">
+      <img class="friend band-friend r" src="brand/logo/spark-mark.svg" alt="" aria-hidden="true">
       <img src="brand/logo/spark-logo-animated-transparent.svg" alt="Spark">
-      <p class="pull">Someone here likes ramen and board games too.</p>
+      <p class="pull">Spark-ing connections in one click.</p>
     </div>
   </section>
 
@@ -221,12 +241,12 @@
         <h2>The people behind Spark</h2>
       </div>
       <!-- Copy a .person card per teammate. For a photo, replace the initial with
-           <img src="assets/img/name.jpg" alt="Name"> inside .avatar -->
+           <img src="assets/teamphotos/name.jpg" alt="Name"> inside .avatar -->
       <div class="team">
-        <div class="card person"><div class="avatar">A</div><h3>Rebecca Alcala</h3><p class="role">Role, e.g. design lead</p></div>
-        <div class="card person"><div class="avatar">B</div><h3>Katherine Kricorian</h3><p class="role">Role</p></div>
-        <div class="card person"><div class="avatar">C</div><h3>Meredith Nam</h3><p class="role">Role</p></div>
-        <div class="card person"><div class="avatar">D</div><h3>Angela Yang</h3><p class="role">Role</p></div>
+        <div class="card person"><div class="avatar"><img src="assets/teamphotos/rebecca.png" alt="Rebecca Alcala"></div><h3>Rebecca Alcala</h3><p class="role">Class of 2027</p></div>
+        <div class="card person"><div class="avatar"><img src="assets/teamphotos/katherine.png" alt="Katherine Kricorian"></div><h3>Katherine Kricorian</h3><p class="role">Class of 2027</p></div>
+        <div class="card person"><div class="avatar"><img src="assets/teamphotos/meredith.png" alt="Meredith Nam"></div><h3>Meredith Nam</h3><p class="role">Class of 2028</p></div>
+        <div class="card person"><div class="avatar"><img src="assets/teamphotos/angela.png" alt="Angela Yang"></div><h3>Angela Yang</h3><p class="role">Class of 2028</p></div>
       </div>
     </div>
   </section>
